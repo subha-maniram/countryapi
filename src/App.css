@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{  
+  width:1140px;
+  padding: 15px 15px;
+  margin:auto !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.header{
+  width:100%;
+  height: 70px;
+  line-height: 70px;
+  position: fixed;
+  top:0;
+  left:0;
+  background:hsl(209 , 23% , 22%);
+}
+.header h5{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1.3rem ;
+  color:#fff;
+}
+.country_bottom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-top: 20px;
+}
+.country_card{
+  width:250px;
+  padding: 20px;
+  border-radius: 5px;
+  background: hsl(209 , 23%,22%);
   color: white;
+} 
+.country_img img{
+   width:100%;
+   border-radius: 5px 5px 0 0;
+   height: 130px;
+}
+.all_country_wrapper{
+  margin-top: 100px;
+}
+.country_data{
+  padding:20px;
+}
+.country_data h3{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 500;
+
+}
+.country_data h6{
+  margin-bottom: 10px;
+  font-weight: 400;
+  opacity: 80%;
+}
+.country_bottom h4{
+  color:#fff;
+  text-align: center;
+  margin-top: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
